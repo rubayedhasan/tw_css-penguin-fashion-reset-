@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <!-- favicon link  -->
-    <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/penguen.png" type="image/x-icon" />
     <!-- StyleSheet link  -->
     <link rel="stylesheet" href="styles/style.css" />
 
@@ -24,6 +24,9 @@
     <script>
       tailwind.config = {
         theme: {
+          container: {
+            center: true,
+          },
           extend: {
             colors: {
               clifford: "#da373d",
@@ -42,19 +45,41 @@
   </head>
   <body>
     <!-- header section  -->
-    <header class="bg-thinYellow">
-      <div
-        class="container md:container lg:container xl:container 2xl:container mx-auto"
-      >
-        <nav>
-          <div class="brand-logo">
-            <img src="icons/logo.png" alt="" />
+    <header class="bg-thinYellow pt-12 pb-28">
+      <div class="container mx-auto px-8 md:px-0">
+        <nav
+          class="flex flex-col md:flex-row md:justify-between md:items-center"
+        >
+          <div class="brand-logo w-full md:w-1/4 mb-3">
+            <img
+              src="icons/logo.png"
+              alt="Penguin Fashion logo"
+              class="w-full"
+            />
           </div>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Contact us</a></li>
+          <ul
+            class="w-4/6 flex flex-col md:flex-row justify-center items-start md:items-center md:space-x-12"
+          >
+            <li>
+              <a href="" class="font-roboto text-base md:text-lg font-medium"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="" class="font-roboto text-base md:text-lg font-medium"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a href="" class="font-roboto text-base md:text-lg font-medium"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="" class="font-roboto text-base md:text-lg font-medium"
+                >Contact us</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
